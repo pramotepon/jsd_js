@@ -75,7 +75,13 @@ console.log(user.age); // 28
 user.age = 29;
 console.log(user.age); // 29
 
-
+/* 
+    Changing data types
+*/
+let x = 123;
+console.log(typeof x);
+x = 'Me';
+console.log(typeof x);
 
 // Create function run
 function run(){
