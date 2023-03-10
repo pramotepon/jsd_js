@@ -8,11 +8,11 @@
 let firstName = "Pramote";
 let lastName = "Phanon";
 let fullName = firstName + ' ' + lastName;
-console.log(fullName);
+console.log(fullName); // Pramote Phanon
 let info = `My name is ${fullName} and I an ${firstName}`;
-console.log(info);
-console.log(fullName.length);
-console.log(fullName.toLocaleUpperCase());
+console.log(info); // My name is Pramote Phanon and I an Pramote
+console.log(fullName.length); 14
+console.log(fullName.toLocaleUpperCase()); // PRAMOTE PHANON
 
 /* 
     Booleans
@@ -20,27 +20,27 @@ console.log(fullName.toLocaleUpperCase());
 // == Value, === Value and Datatype
 let email = 'pramote.p.on@gmail.com';
 let findLetter = email.includes('@');
-console.log(findLetter);
+console.log(findLetter); // true
 
 /* 
     Numbers
 */
 let radius = 10;
 const pi = 3.14;
-console.log(radius, pi);
-console.log(10/2);
+console.log(radius, pi); // 10 3.14
+console.log(10/2); // 5
 let result = radius % 3;
-console.log(result);
+console.log(result); // 1
 // Order B() I** D/ M* A+ S-
 let bidMas = 5 * (10-3)**2;
 console.log(bidMas);
 
 // Undefined The value of a variable [default: undefined]
 let isUndefined;
-console.log(isUndefined);
+console.log(isUndefined); // undefined
 // Null
 let age = null;
-console.log(age,age+3, `my age is ${age}`);
+console.log(age,age+3, `my age is ${age}`); // null 3 'my age is null'
 // Null and Undefined
 console.log(null == undefined); // true
 console.log(null === undefined); // false
