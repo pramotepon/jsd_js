@@ -1,5 +1,5 @@
 // Const array numbers
-const numbers = [3,4];
+let numbers = [3,4];
 console.log(numbers); // [3,4]
 
 // Method push add data to last data in array
@@ -29,3 +29,7 @@ console.log(removeFirst); // 1
 const removeMiddle = numbers.splice(1,2);
 console.log(numbers); // [2, 3, 4, 5]
 console.log(removeMiddle); // ['a', 'b']
+
+// Empty Array case
+numbers.length = 0;
+console.log(numbers); // []
