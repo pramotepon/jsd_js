@@ -56,3 +56,4 @@ console.log(sliceFirst); // [3, 4]
 
 // Reverse data in array
 console.log(combined.reverse());
+
