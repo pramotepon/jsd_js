@@ -45,11 +45,14 @@ console.log(numbers.indexOf(4,3)); // 4
 const firstConc = [1,2,3];
 const secondConc = [4,5,6];
 // Concat firstConc and secondConc
-const combined = firstConc.concat(secondConc);
-console.log(combined); // [1, 2, 3, 4, 5, 6]
+const combined = secondConc.concat(firstConc);
+console.log(combined); // [4, 5, 6, 1, 2, 3]
 // Concat firstConc and secondConc
 const combinedTwo =[...firstConc,...secondConc];
-console.log(combined); // [1, 2, 3, 4, 5, 6]
+console.log(combinedTwo); // [1, 2, 3, 4, 5, 6]
 // Slice array
 const sliceFirst = combined.slice(2,4);
 console.log(sliceFirst); // [3, 4]
+
+// Reverse data in array
+console.log(combined.reverse());
