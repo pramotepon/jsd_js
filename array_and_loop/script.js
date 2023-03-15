@@ -24,3 +24,8 @@ console.log(removeLast); // 6
 const removeFirst = numbers.shift();
 console.log(numbers); // [2, 'a', 'b', 3, 4, 5]
 console.log(removeFirst); // 1
+
+// remove choose index for remove
+const removeMiddle = numbers.splice(1,2);
+console.log(numbers); // [2, 3, 4, 5]
+console.log(removeMiddle); // ['a', 'b']
