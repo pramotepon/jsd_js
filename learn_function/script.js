@@ -51,3 +51,10 @@ let y = x;
 console.log(y);
 
 // Function Scope 3 types Block Scope, Function Scope, Global Scope
+let a = 1;
+function justResign(){
+    a = 2;
+    console.log(a);
+}
+justResign();
+console.log(a);
