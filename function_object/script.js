@@ -22,7 +22,8 @@ myCar.year = 2000;
 console.log(myCar.year);
 
 // Factory function
-function newCar(make, model) {
+// Constructor function start with Capital
+function NewCar(make, model) {
     return{
         make,model,drive(){
             console.log(drive);
@@ -30,10 +31,26 @@ function newCar(make, model) {
     };
 }
 // Create new Object to firstCar
-const firstCar = new newCar('BMW', 900);
+const firstCar = new NewCar('BMW', 900);
 console.log(firstCar); // { make: 'BMW', model: 900, drive: [Function: drive] }
 // Create new Object to secondCar
-const secondCar = new newCar('Toyota', 1530);
+const secondCar = new NewCar('Toyota', 1530);
 console.log(secondCar); // { make: 'Toyota', model: 1530, drive: [Function: drive] }
 
 // Object Construct
+// Create variable Object name 
+let ThisCar = function (make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.drive = function(name){
+        console.log(`${name} is driving car`);
+    };
+};
+
+let thirdCar = new ThisCar('Nisan', 'A123', 2003); 
+console.log(thirdCar);
+thirdCar.drive('Jack'); // Jack is driving car
+
+let forthCar = new ThisCar('Nisan4', 'A1234', 2004); 
+console.log(forthCar);
