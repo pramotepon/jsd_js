@@ -45,3 +45,11 @@ console.log(funcStoreEUR); // [ 4.25, 5.1, 5.95, 6.8 ]
 */
 const filtered = numbers.filter(n => n >= 3);
 console.log(filtered); // [ 3, 4, 5 ]
+
+/* 
+    indexOf
+*/
+const lessNumber = numbers.findIndex(num => {
+    return num < 10;
+});
+console.log(lessNumber);
