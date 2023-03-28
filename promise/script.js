@@ -32,7 +32,7 @@ let stocks = {
   cup: ["small", "midium", "large"],
   topping: ["chocolate", "milk"],
 };
-let is_shop_open = false; //1. is the shop open
+let is_shop_open = true; //1. is the shop open
 let order = (time, work) => {
   // work and time 2. customer order
   return new Promise((resolve, reject) => {
